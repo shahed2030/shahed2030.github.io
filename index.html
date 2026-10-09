@@ -1,88 +1,271 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The personal portfolio of Md Shahed Hossen — digital marketing, creative projects, and professional skills." />
-  <meta name="theme-color" content="#0b1020" />
-  <title>Md Shahed Hossen — Personal Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b1020;--panel:#11182b;--text:#f4f6ff;--muted:#a8b1ca;--purple:#a78bfa;--cyan:#67e8f9;--line:rgba(255,255,255,.12);--grad:linear-gradient(115deg,#a78bfa 0%,#60a5fa 48%,#67e8f9 100%)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 15% 5%,rgba(124,58,237,.17),transparent 35%),radial-gradient(ellipse at 88% 30%,rgba(14,165,233,.12),transparent 34%),#0b1020}.container{width:min(1120px,calc(100% - 40px));margin:auto}.nav-wrap{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:'Space Grotesk',sans-serif;font-weight:700;color:white;text-decoration:none;letter-spacing:-.5px}.brand span{color:var(--cyan)}.nav-links{display:flex;gap:25px;align-items:center}.nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;transition:color .2s}.nav-links a:hover{color:white}.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px}.hero{min-height:680px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:60px;padding:85px 0 95px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#c4b5fd;font-size:.82rem;text-transform:uppercase;letter-spacing:2px;font-weight:700}.dot{height:8px;width:8px;background:#67e8f9;border-radius:50%;box-shadow:0 0 18px #67e8f9}.hero h1{font:700 clamp(3rem,7vw,5.7rem)/1.03 'Space Grotesk',sans-serif;letter-spacing:-4px;margin:22px 0}.gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.08rem;color:var(--muted);max-width:580px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid var(--line);transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.22)}.btn-primary{background:var(--grad);color:#09101e;border:0}.btn-ghost{color:white;background:rgba(255,255,255,.035)}.hero-art{min-height:410px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:300px;height:300px;border-radius:50%;background:linear-gradient(135deg,rgba(167,139,250,.9),rgba(96,165,250,.45),rgba(103,232,249,.8));filter:blur(1px);opacity:.88;animation:float 7s ease-in-out infinite;box-shadow:0 0 100px rgba(139,92,246,.23)}.orb:after{content:"";position:absolute;inset:2px;border-radius:50%;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.8),transparent 13%),linear-gradient(135deg,#8b5cf6,#2563eb 60%,#22d3ee);opacity:.85}.orbit{position:absolute;width:390px;height:160px;border:1px solid rgba(167,139,250,.45);border-radius:50%;transform:rotate(-30deg);animation:spin 18s linear infinite}.orbit.two{transform:rotate(55deg);border-color:rgba(103,232,249,.35);animation-direction:reverse}.floating-card{position:absolute;z-index:2;background:rgba(17,24,43,.82);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:14px 17px;box-shadow:0 18px 55px rgba(0,0,0,.25)}.floating-card strong{display:block;font-size:.96rem}.floating-card small{color:var(--muted)}.card-one{top:48px;left:0;animation:float 5s ease-in-out infinite}.card-two{right:-5px;bottom:62px;animation:float 6s ease-in-out infinite reverse}.mini-icon{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:rgba(167,139,250,.18);margin-right:8px;color:var(--cyan)}section{padding:85px 0}.section-head{max-width:650px;margin-bottom:34px}.kicker{color:var(--cyan);font-size:.78rem;text-transform:uppercase;letter-spacing:2px;font-weight:700}.section-head h2{font:700 clamp(2rem,4vw,3.1rem)/1.12 'Space Grotesk',sans-serif;letter-spacing:-1.6px;margin:10px 0}.section-head p,.muted{color:var(--muted)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.about-card,.skill,.project,.contact-card{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:27px}.about-mark{height:100%;min-height:245px;display:grid;place-items:center;background:radial-gradient(circle,rgba(124,58,237,.24),transparent 65%),rgba(255,255,255,.02)}.initials{width:130px;height:130px;border-radius:35px;display:grid;place-items:center;font:700 2.7rem 'Space Grotesk',sans-serif;background:var(--grad);color:#0b1020;transform:rotate(-7deg);box-shadow:0 20px 60px rgba(124,58,237,.22)}.about-card h3,.skill h3,.project h3{font:600 1.2rem 'Space Grotesk',sans-serif;margin:0 0 10px}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.chip{padding:7px 11px;border-radius:999px;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.22);color:#ddd6fe;font-size:.82rem}.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill{transition:transform .25s,border-color .25s}.skill:hover,.project:hover{transform:translateY(-5px);border-color:rgba(103,232,249,.42)}.skill-icon{font-size:1.45rem;margin-bottom:16px;display:inline-grid;place-items:center;width:48px;height:48px;border-radius:14px;background:rgba(103,232,249,.1)}.skill p,.project p{color:var(--muted);font-size:.94rem;margin-bottom:0}.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{padding:0;overflow:hidden;transition:transform .25s,border-color .25s}.project-art{height:180px;display:flex;align-items:flex-end;padding:22px;background:radial-gradient(circle at 75% 25%,rgba(103,232,249,.4),transparent 25%),linear-gradient(135deg,rgba(124,58,237,.7),rgba(37,99,235,.25)),#12182d}.project-art.alt{background:radial-gradient(circle at 25% 30%,rgba(251,191,36,.28),transparent 25%),linear-gradient(135deg,rgba(14,165,233,.5),rgba(124,58,237,.4)),#12182d}.project-art.third{background:radial-gradient(circle at 70% 35%,rgba(244,114,182,.3),transparent 25%),linear-gradient(135deg,rgba(67,56,202,.65),rgba(8,145,178,.35)),#12182d}.project-art.fourth{background:radial-gradient(circle at 25% 70%,rgba(103,232,249,.3),transparent 25%),linear-gradient(135deg,rgba(30,64,175,.6),rgba(147,51,234,.35)),#12182d}.art-label{font:600 1.45rem 'Space Grotesk',sans-serif}.project-body{padding:22px}.project-type{color:var(--cyan);font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.notice{border:1px dashed rgba(103,232,249,.35);border-radius:14px;padding:14px 17px;color:var(--muted);font-size:.88rem;margin-top:18px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.contact-card h3{font:600 1.35rem 'Space Grotesk',sans-serif}.contact-link{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;overflow-wrap:anywhere}.contact-link:last-child{border-bottom:0}.contact-link span:first-child{width:36px;height:36px;display:grid;place-items:center;background:rgba(167,139,250,.12);border-radius:10px}.contact-link small{display:block;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}@keyframes spin{to{rotate:360deg}}@media(max-width:800px){.hero{grid-template-columns:1fr;gap:20px;padding:70px 0 40px}.hero-art{min-height:340px;max-width:500px;width:100%;margin:auto}.orb{width:235px;height:235px}.orbit{width:310px;height:130px}.hero h1{letter-spacing:-2.5px}.about-grid,.contact-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 22px 24px;background:#0e1426;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-btn{display:block}}@media(max-width:560px){.container{width:min(100% - 30px,1120px)}section{padding:62px 0}.skills-grid,.projects-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-art{min-height:300px}.card-one{left:-2px;top:28px}.card-two{right:-3px;bottom:28px}.floating-card{padding:11px 13px}.about-card,.skill,.contact-card{padding:22px}.footer-inner{flex-direction:column}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Md Shahed Hossen - Digital Marketing, Creative Projects and Personal Portfolio">
+<title>Md Shahed Hossen | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#0b1020;
+  --card:#131b30;
+  --text:#f5f7ff;
+  --muted:#aab4ce;
+  --purple:#a78bfa;
+  --cyan:#67e8f9;
+  --border:#ffffff19;
+  --gradient:linear-gradient(120deg,#a78bfa,#60a5fa,#67e8f9);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:'DM Sans',sans-serif;line-height:1.7;
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-1;
+  background:radial-gradient(ellipse at 10% 5%,#7c3aed30,transparent 35%),
+  radial-gradient(ellipse at 90% 35%,#0284c730,transparent 35%),var(--bg);
+}
+.container{width:min(1100px,92%);margin:auto}
+a{color:inherit}
+header.navbar{
+  position:sticky;top:0;z-index:10;
+  background:#0b1020eF;border-bottom:1px solid var(--border);
+  backdrop-filter:blur(15px);
+}
+nav{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:15px}
+.logo{font:700 24px 'Space Grotesk';text-decoration:none}
+.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap}
+.navlinks a{color:var(--muted);text-decoration:none;font-size:14px}
+.navlinks a:hover{color:var(--cyan)}
+.menu{display:none;background:transparent;color:white;border:1px solid var(--border);padding:8px;border-radius:8px}
+.hero{
+  min-height:590px;display:grid;grid-template-columns:1.2fr .8fr;
+  align-items:center;gap:35px;padding:75px 0;
+}
+.tag{color:var(--cyan);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.07;letter-spacing:-2px;margin:18px 0}
+h2{font-size:clamp(30px,4vw,45px);line-height:1.2;margin:12px 0}
+h3{margin-top:0}
+.gradient{background:var(--gradient);color:transparent;background-clip:text;-webkit-background-clip:text}
+p{color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:12px 19px;border-radius:10px;text-decoration:none;font-weight:bold;border:1px solid var(--border)}
+.primary{background:var(--gradient);color:#07101e;border:none}
+.secondary{background:#ffffff09}
+.btn:hover{transform:translateY(-2px)}
+.art{min-height:340px;display:grid;place-items:center;position:relative}
+.orb{width:230px;height:230px;border-radius:50%;background:var(--gradient);box-shadow:0 0 90px #8b5cf644;animation:float 5s infinite ease-in-out}
+.orbit{position:absolute;width:310px;height:125px;border:1px solid #a78bfa88;border-radius:50%;transform:rotate(-35deg);animation:spin 18s linear infinite}
+.float-card{position:absolute;padding:13px 16px;border-radius:12px;border:1px solid var(--border);background:#131b30eF;box-shadow:0 15px 40px #0005}
+.float-card small{display:block;color:var(--muted)}
+.f1{top:20px;left:0}.f2{bottom:25px;right:0}
+section{padding:72px 0}
+.section-intro{max-width:700px;margin-bottom:30px}
+.panel,.skill,.project,.timeline-card,.contact-card{
+  border:1px solid var(--border);border-radius:17px;
+  background:linear-gradient(145deg,#ffffff0e,#ffffff04);
+  padding:23px;
+}
+.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:18px}
+.avatar{display:grid;place-items:center;min-height:250px;background:radial-gradient(circle,#7c3aed66,transparent 65%)}
+.initials{width:125px;height:125px;border-radius:30px;background:var(--gradient);color:#101326;display:grid;place-items:center;font:700 42px 'Space Grotesk';transform:rotate(-5deg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill,.project,.timeline-card{transition:transform .2s,border-color .2s}
+.skill:hover,.project:hover,.timeline-card:hover{transform:translateY(-4px);border-color:#67e8f977}
+.icon{font-size:25px;margin-bottom:12px}
+.skill p,.project p,.timeline-card p{font-size:14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.chip{font-size:12px;padding:5px 10px;border:1px solid #a78bfa50;border-radius:30px;background:#a78bfa18;color:#ddd6fe}
+.project{padding:0;overflow:hidden}
+.project-top{height:145px;padding:20px;display:flex;align-items:end;background:linear-gradient(130deg,#7c3aed,#2563eb,#0891b2);font:600 23px 'Space Grotesk'}
+.project-top.two{background:linear-gradient(130deg,#b45309,#be185d,#7c3aed)}
+.project-top.three{background:linear-gradient(130deg,#0369a1,#4338ca,#7c3aed)}
+.project-top.four{background:linear-gradient(130deg,#047857,#0e7490,#2563eb)}
+.project-content{padding:20px}
+.project a,.textlink{color:var(--cyan);text-decoration:none;font-size:14px}
+.meta{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:1px}
+.notice{border:1px dashed #67e8f966;padding:13px;border-radius:10px;font-size:13px;margin-top:20px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact a{display:block;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--border);overflow-wrap:anywhere}
+.contact small{display:block;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted);font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.reveal{animation:appear .8s ease both}
+@keyframes float{50%{transform:translateY(-13px)}}
+@keyframes spin{to{transform:rotate(325deg)}}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;padding-top:55px}
+ .art{min-height:290px}
+ .about,.contact{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#0b1020;padding:20px;flex-direction:column}
+ .navlinks.open{display:flex}.menu{display:block}
+}
+@media(max-width:540px){
+ .grid,.grid2{grid-template-columns:1fr}
+ section{padding:55px 0}
+ .orb{width:190px;height:190px}
+ .orbit{width:260px;height:100px}
+ h1{letter-spacing:-1px}
+}
+</style>
 </head>
+
 <body>
-  <div class="nav-wrap"><nav class="container" aria-label="Main navigation">
-    <a class="brand" href="#home">SHAHED<span>.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
-    <div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-  </nav></div>
-  <main>
-    <header class="container hero" id="home">
-      <div class="reveal">
-        <div class="eyebrow"><span class="dot"></span> Welcome to my portfolio</div>
-        <h1>Hi, I'm<br><span class="gradient-text">Md Shahed Hossen.</span></h1>
-        <p>A curious, creative professional building skills in digital marketing, online growth, and digital experiences. I enjoy turning ideas into useful work and learning something new with every project.</p>
-        <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#contact">Let's connect <span aria-hidden="true">→</span></a></div>
-      </div>
-      <div class="hero-art reveal" aria-label="Abstract blue and purple gradient artwork">
-        <div class="orbit"></div><div class="orbit two"></div><div class="orb"></div>
-        <div class="floating-card card-one"><strong><span class="mini-icon">✦</span>Creative mindset</strong><small>Ideas into action</small></div>
-        <div class="floating-card card-two"><strong><span class="mini-icon">↗</span>Always learning</strong><small>Grow. Build. Improve.</small></div>
-      </div>
-    </header>
-    <section id="about"><div class="container">
-      <div class="section-head reveal"><div class="kicker">A little about me</div><h2>Curious by nature.<br><span class="gradient-text">Focused on growth.</span></h2><p>My portfolio is a growing collection of my skills, practice projects, and professional journey.</p></div>
-      <div class="about-grid">
-        <div class="about-card about-mark reveal"><div class="initials">SH</div></div>
-        <div class="about-card reveal"><h3>I'm Md Shahed Hossen</h3><p class="muted">I am developing my professional profile around digital marketing, creative problem-solving, and online communication. I believe in staying curious, learning through practice, and making every project a chance to improve.</p><p class="muted">Here you'll find selected practice work and projects. As I gain experience, I'll keep updating this space with real examples and measurable outcomes.</p><div class="chips"><span class="chip">Digital Marketing</span><span class="chip">Creative Thinking</span><span class="chip">Continuous Learning</span><span class="chip">Communication</span></div></div>
-      </div>
-    </div></section>
-    <section id="skills"><div class="container">
-      <div class="section-head reveal"><div class="kicker">What I'm building</div><h2>Skills & <span class="gradient-text">interests</span></h2><p>Replace or refine these items to match the tools you actively use and the services you can confidently deliver.</p></div>
-      <div class="skills-grid">
-        <article class="skill reveal"><div class="skill-icon">◉</div><h3>Social Media Marketing</h3><p>Content planning, audience engagement, and building a consistent online presence.</p></article>
-        <article class="skill reveal"><div class="skill-icon">⌕</div><h3>SEO & Content</h3><p>Learning keyword research, on-page SEO, and creating content around search intent.</p></article>
-        <article class="skill reveal"><div class="skill-icon">↗</div><h3>Digital Advertising</h3><p>Campaign planning, audience research, and performance-focused advertising concepts.</p></article>
-        <article class="skill reveal"><div class="skill-icon">▤</div><h3>Analytics & Reporting</h3><p>Organizing campaign data and turning results into clear, actionable insights.</p></article>
-        <article class="skill reveal"><div class="skill-icon">✧</div><h3>Creative Content</h3><p>Exploring visual ideas, messaging, and content formats for digital platforms.</p></article>
-        <article class="skill reveal"><div class="skill-icon">⌘</div><h3>Tools & Technology</h3><p>Add the real tools you use here, such as Canva, Google Analytics, or Meta Ads Manager.</p></article>
-      </div>
-    </div></section>
-    <section id="projects"><div class="container">
-      <div class="section-head reveal"><div class="kicker">Selected work</div><h2>Projects that show<br><span class="gradient-text">how I think.</span></h2><p>These are starter project cards. Replace them with your own work, screenshots, links, and real results before sharing your portfolio professionally.</p></div>
-      <div class="projects-grid">
-        <article class="project reveal"><div class="project-art"><div class="art-label">Social Media Plan</div></div><div class="project-body"><div class="project-type">Content strategy · Practice project</div><h3>30-Day Content Calendar</h3><p>A sample monthly plan with content themes, post formats, and engagement ideas for a small business.</p><div class="chips"><span class="chip">Planning</span><span class="chip">Content</span></div></div></article>
-        <article class="project reveal"><div class="project-art alt"><div class="art-label">SEO Research</div></div><div class="project-body"><div class="project-type">SEO · Practice project</div><h3>Keyword Research Sample</h3><p>A sample keyword grouping exercise to organize search intent and suggest content opportunities.</p><div class="chips"><span class="chip">Keywords</span><span class="chip">Research</span></div></div></article>
-        <article class="project reveal"><div class="project-art third"><div class="art-label">Ad Campaign</div></div><div class="project-body"><div class="project-type">Advertising · Case study placeholder</div><h3>Campaign Planning Concept</h3><p>A sample campaign outline covering the goal, target audience, creative direction, and measurement plan.</p><div class="chips"><span class="chip">Strategy</span><span class="chip">Analytics</span></div></div></article>
-        <article class="project reveal"><div class="project-art fourth"><div class="art-label">Brand Presence</div></div><div class="project-body"><div class="project-type">Branding · Practice project</div><h3>Small Business Social Profile</h3><p>A concept for improving a business profile with consistent messaging, content pillars, and calls to action.</p><div class="chips"><span class="chip">Branding</span><span class="chip">Social Media</span></div></div></article>
-      </div>
-      <div class="notice">Portfolio honesty tip: these cards are clearly labeled sample concepts, not claimed client results. Only add client names, campaign figures, testimonials, or outcomes that you can verify and have permission to share.</div>
-    </div></section>
-    <section id="contact"><div class="container">
-      <div class="section-head reveal"><div class="kicker">Get in touch</div><h2>Have an idea?<br><span class="gradient-text">Let's connect.</span></h2><p>I'm open to conversations, collaboration, and opportunities to learn and grow.</p></div>
-      <div class="contact-grid">
-        <div class="contact-card reveal"><h3>Contact details</h3><p class="muted">Update the placeholders below with your real public contact details before publishing.</p>
-          <a class="contact-link" href="mailto:your.email@example.com"><span>✉</span><span>Email<small>your.email@example.com</small></span></a>
-          <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>in</span><span>LinkedIn<small>Add your profile link</small></span></a>
-          <a class="contact-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer"><span>f</span><span>Facebook<small>Add your public profile or page</small></span></a>
-        </div>
-        <div class="contact-card reveal"><h3>Let's make something useful.</h3><p class="muted">Have a project, idea, or opportunity in mind? Send me an email and tell me a little about it.</p><div class="actions"><a class="btn btn-primary" href="mailto:your.email@example.com?subject=Hello%20Shahed">Send me an email ↗</a></div><p class="muted" style="font-size:.86rem;margin-top:22px">Based in Bangladesh · Open to connecting worldwide</p></div>
-      </div>
-    </div></section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Md Shahed Hossen. All rights reserved.</span><span>Designed with curiosity <span class="gradient-text">✦</span></span></div></footer>
-  <script>
-    const menuBtn=document.getElementById('menuBtn');
-    const navLinks=document.getElementById('navLinks');
-    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕ Close':'☰ Menu';});
-    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰ Menu';}));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-  </script>
+<header class="navbar">
+  <nav class="container">
+    <a class="logo" href="#home">SHAHED<span>.</span></a>
+    <button class="menu" id="menu" aria-expanded="false">☰ Menu</button>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#services">Services</a><a href="#projects">Projects</a>
+      <a href="#education">Education</a><a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="container hero" id="home">
+  <div class="reveal">
+    <div class="tag">✦ Welcome to my portfolio</div>
+    <h1>Hi, I'm<br><span class="gradient">Md Shahed Hossen</span></h1>
+    <p>Digital Marketer • Freelancer • Creative Learner</p>
+    <p>Welcome to my personal portfolio. Explore my skills, projects, experience, learning journey, and the digital work I create.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore My Work ↗</a>
+      <a class="btn secondary" href="#contact">Contact Me →</a>
+    </div>
+    <div class="chips"><span class="chip">Digital Marketing</span><span class="chip">SEO</span><span class="chip">Social Media</span><span class="chip">Creative Work</span></div>
+  </div>
+  <div class="art reveal">
+    <div class="orbit"></div><div class="orb"></div>
+    <div class="float-card f1"><strong>Creative Ideas ✦</strong><small>Ideas into action</small></div>
+    <div class="float-card f2"><strong>Always Learning ↗</strong><small>Build. Learn. Grow.</small></div>
+  </div>
+</section>
+
+<section id="about"><div class="container">
+  <div class="section-intro"><div class="tag">About Me</div><h2>My Story & <span class="gradient">My Goals</span></h2></div>
+  <div class="about">
+    <div class="panel avatar"><div class="initials">SH</div></div>
+    <div class="panel">
+      <h3>Hello, I'm Shahed!</h3>
+      <p>I am interested in digital marketing, online business, content creation, technology, and continuous learning. I enjoy exploring new ideas and developing practical skills that can solve real-world problems.</p>
+      <p>This website is my professional space to showcase my work, skills, education, projects, and achievements. I will keep updating it as I gain more experience.</p>
+      <div class="chips"><span class="chip">Creative Thinking</span><span class="chip">Communication</span><span class="chip">Learning</span><span class="chip">Problem Solving</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="section-intro"><div class="tag">My Expertise</div><h2>Skills & <span class="gradient">Knowledge</span></h2><p>Update these skills to match what you can confidently demonstrate.</p></div>
+  <div class="grid">
+    <article class="skill"><div class="icon">📱</div><h3>Social Media Marketing</h3><p>Content planning, page optimization, audience engagement, and social media strategy.</p></article>
+    <article class="skill"><div class="icon">🔎</div><h3>SEO & Keywords</h3><p>Keyword research, search intent, content structure, and on-page SEO fundamentals.</p></article>
+    <article class="skill"><div class="icon">📈</div><h3>Digital Advertising</h3><p>Campaign planning, audience research, ad concepts, and performance tracking.</p></article>
+    <article class="skill"><div class="icon">🎨</div><h3>Creative Content</h3><p>Creative ideas, promotional content, copywriting, and visual content concepts.</p></article>
+    <article class="skill"><div class="icon">📊</div><h3>Analytics & Reporting</h3><p>Understanding campaign metrics, organizing data, and preparing reports.</p></article>
+    <article class="skill"><div class="icon">💻</div><h3>Web Basics</h3><p>HTML, CSS, GitHub, and building a simple responsive portfolio website.</p></article>
+  </div>
+</div></section>
+
+<section id="services"><div class="container">
+  <div class="section-intro"><div class="tag">What I Offer</div><h2>Services & <span class="gradient">Solutions</span></h2><p>Keep only the services you are prepared and qualified to deliver.</p></div>
+  <div class="grid">
+    <article class="skill"><div class="icon">📣</div><h3>Social Media Support</h3><p>Content calendars, profile optimization, and engagement planning.</p></article>
+    <article class="skill"><div class="icon">🔍</div><h3>SEO Research</h3><p>Keyword ideas, content planning, and basic SEO recommendations.</p></article>
+    <article class="skill"><div class="icon">✍️</div><h3>Content Planning</h3><p>Content ideas, promotional copy, and platform-specific messaging.</p></article>
+    <article class="skill"><div class="icon">🎯</div><h3>Campaign Planning</h3><p>Audience research, creative direction, and advertising objectives.</p></article>
+    <article class="skill"><div class="icon">🌐</div><h3>Portfolio Websites</h3><p>Simple static website presentation and HTML/CSS updates.</p></article>
+    <article class="skill"><div class="icon">🤝</div><h3>Online Presence</h3><p>Professional profile messaging and brand presentation ideas.</p></article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="section-intro"><div class="tag">My Work</div><h2>Featured <span class="gradient">Projects</span></h2><p>Replace the example projects below with your real work, screenshots, and live links.</p></div>
+  <div class="grid2">
+    <article class="project"><div class="project-top">Social Media Strategy</div><div class="project-content"><div class="meta">CONTENT PLANNING</div><h3>30-Day Content Calendar</h3><p>A sample concept for planning content themes, posts, and engagement activities for a business.</p><div class="chips"><span class="chip">Strategy</span><span class="chip">Content</span></div></div></article>
+    <article class="project"><div class="project-top two">SEO Research</div><div class="project-content"><div class="meta">SEARCH OPTIMIZATION</div><h3>Keyword Research Sample</h3><p>A sample keyword grouping exercise to organize search intent and content opportunities.</p><div class="chips"><span class="chip">SEO</span><span class="chip">Research</span></div></div></article>
+    <article class="project"><div class="project-top three">Ad Campaign</div><div class="project-content"><div class="meta">DIGITAL ADVERTISING</div><h3>Campaign Planning Concept</h3><p>A campaign outline covering audience ideas, creative direction, and performance goals.</p><div class="chips"><span class="chip">Advertising</span><span class="chip">Analytics</span></div></div></article>
+    <article class="project"><div class="project-top four">Personal Website</div><div class="project-content"><div class="meta">WEB PROJECT</div><h3>My Portfolio Website</h3><p>A responsive portfolio presenting skills, projects, background, and professional contact links.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">GitHub Pages</span></div><a href="https://shahed2030.github.io/" target="_blank" rel="noopener">View Live Website ↗</a></div></article>
+  </div>
+  <div class="notice">Note: these project descriptions are sample concepts, not verified client results. Replace them with completed work or label them as practice projects.</div>
+</div></section>
+
+<section id="education"><div class="container">
+  <div class="section-intro"><div class="tag">My Journey</div><h2>Education & <span class="gradient">Experience</span></h2><p>Fill in the exact details of your education, training, and work history.</p></div>
+  <div class="grid2">
+    <article class="timeline-card"><div class="meta">EDUCATION</div><h3>Your Degree / Qualification</h3><p>Add your institution name, subject, study period, and academic achievements.</p></article>
+    <article class="timeline-card"><div class="meta">EXPERIENCE</div><h3>Your Job / Freelance Work</h3><p>Add your role, responsibilities, clients or organization, and measurable results if verified.</p></article>
+    <article class="timeline-card"><div class="meta">TRAINING</div><h3>Courses & Workshops</h3><p>Add relevant courses, tools learned, workshops, and practical assignments.</p></article>
+    <article class="timeline-card"><div class="meta">ACHIEVEMENTS</div><h3>Milestones & Recognition</h3><p>Add real awards, achievements, volunteer activities, or completed milestones.</p></article>
+  </div>
+</div></section>
+
+<section id="certificates"><div class="container">
+  <div class="section-intro"><div class="tag">Learning & Growth</div><h2>Certificates & <span class="gradient">Achievements</span></h2><p>Add your real certificates and their verification links.</p></div>
+  <div class="grid">
+    <article class="skill"><div class="icon">🏅</div><h3>Certificate One</h3><p>Replace with the real course name, issuing organization, and completion date.</p></article>
+    <article class="skill"><div class="icon">🎓</div><h3>Certificate Two</h3><p>Add another qualification and a link to the certificate or verification page.</p></article>
+    <article class="skill"><div class="icon">⭐</div><h3>Achievement</h3><p>Use this space for a genuine award, milestone, or recognition.</p></article>
+  </div>
+  <div class="notice">Do not list certificates or awards you have not actually earned.</div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="section-intro"><div class="tag">Contact Me</div><h2>Let's Work <span class="gradient">Together</span></h2><p>Interested in connecting, collaborating, or discussing an opportunity? Reach out using your updated links below.</p></div>
+  <div class="contact">
+    <div class="contact-card">
+      <h3>Find Me Online</h3>
+      <!-- Replace these placeholder links with your actual profile links -->
+      <a href="mailto:your.email@example.com">✉ Email<small>your.email@example.com — change this</small></a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">f Facebook<small>Add your Facebook profile URL</small></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">in LinkedIn<small>Add your LinkedIn profile URL</small></a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">▶ YouTube<small>Add your YouTube channel URL</small></a>
+      <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">☏ WhatsApp<small>Replace with your country code and number</small></a>
+    </div>
+    <div class="contact-card">
+      <h3>Have a project in mind?</h3>
+      <p>Send a message with a brief description of your idea, project, or professional opportunity.</p>
+      <div class="actions"><a class="btn primary" href="mailto:your.email@example.com?subject=Portfolio%20Inquiry">Send an Email ↗</a></div>
+      <p>Based in Bangladesh · Open to connecting worldwide.</p>
+      <div class="notice">Remember to replace the example email, social links, education, experience, and project details before sharing this website publicly.</div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Md Shahed Hossen</span><span>Made with creativity ✦</span></div></footer>
+
+<script>
+const menu=document.getElementById('menu');
+const navlinks=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{
+  const opened=navlinks.classList.toggle('open');
+  menu.setAttribute('aria-expanded',String(opened));
+  menu.textContent=opened?'✕ Close':'☰ Menu';
+});
+navlinks.querySelectorAll('a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    navlinks.classList.remove('open');
+    menu.setAttribute('aria-expanded','false');
+    menu.textContent='☰ Menu';
+  });
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
